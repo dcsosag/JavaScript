@@ -58,3 +58,11 @@ Persona6.prototype.tel=5415452;
 
 console.log(padre)
 
+function Fsaludar(nombre){
+    nombre;
+    return "Hola "+ nombre;
+}
+const  Cliente1 = {
+    saludar : Fsaludar
+}
+console.log(Cliente1.saludar("Darcy"))
