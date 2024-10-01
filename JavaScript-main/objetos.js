@@ -57,3 +57,4 @@ console.log(madre)
 Persona6.prototype.tel=5415452;
 
 console.log(padre)
+
