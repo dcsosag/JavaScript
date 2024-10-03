@@ -83,17 +83,34 @@ let constructor = function (precio) {
   return miObjeto;
 };
 //funcion anonima
-//closure utilizar una funcion anonima
+//closure utilizar una funcion anonima - defino objetos de forma local
 precio1 = constructor(100);
 console.log(precio1.calcularIva());
 
-function miFuncion(){
-    let count = 1
-    function contador (){
-
-        return count
-    }
-    return contador()
+function miFuncion() {
+  let count = 1;
+  function contador() {
+    return count;
+  }
+  return contador();
 }
-console.log(miFuncion())
-count
+console.log(miFuncion());
+//count;
+
+var x = 10;
+function foo(){
+
+
+  var y =20;
+
+  function bar(){
+
+    var z = 15;
+    var output = x + y + z;
+    return output;
+  }
+
+return bar();
+
+}
+console.log(foo());
